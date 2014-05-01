@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Express</title>
+	<script type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
+	<style type="text/css"></style>
+</head>
+<body style="">
+	<div id="gamescreen" style="display: block; position: relative; width: 1024px; height: 600px; margin-left: auto; margin-right: auto; border: 1px solid;">
+		<div id="gamepanel" style="position: absolute; left: 0px;top:0px;width:512px;height: 600px">
+			<canvas id="game_canvas" width="492px" height="580px" style="margin: 10px;"></canvas>
+			<script type="text/javascript" src="./js/tetris.js"></script>
+		</div>
+		<div id="infopanel" style="position: absolute; left: 512px;top:0px;width:492px;height: 580px;padding: 10px; overflow-y: scroll;">
+			<span>control using arrow keys and 'Q' for rotation. Enjoy.</span>
+		</div>
+	</div>
+	<div id="loginscreen" style="width: 250px; margin-left: auto; margin-right: auto; margin-top: 15%; display: none;">
+		<label>Username</label>
+		<br>
+		<input id="nickname" type="text">
+		<br>
+		<label>Room</label>
+		<br>
+		<input id="room" type="text">
+		<br>
+		<input id="submit_btn" type="button" value="join">
+	</div>
+</body>
+</html>
